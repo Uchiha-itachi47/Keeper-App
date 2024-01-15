@@ -6,9 +6,9 @@ function Note(props) {
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-    <DeleteIcon onClick={() => {
-          props.noteDelete(props.id);
-        }}/>
+        <DeleteIcon className="Dbutton" onClick={() => {
+            props.noteDelete(props.id);
+            }} />
     </div>
   );
 }
